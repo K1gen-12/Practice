@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkslateblue;
+}
+
+.main {
+    margin-top: 8vh;
+    background: mediumaquamarine;
+    width: 50vw;
+    height: 80.6vh;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,.5);
+    /* text-align: center; */
+    border-radius: 5px;
+    position: relative;
+}
+
+.form {
+    position: absolute;
+    background: whitesmoke;
+    width: 49vw;
+    height: 79vh;
+    top: 1%;
+    left: 1%;
+    border-radius: 5px;
+}
+
+.form h3 {
+    text-align: center;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.e-mail input {
+    background: whitesmoke;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+button{
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+}
+
+button {
+  position: relative;
+  display: block;
+  padding: 1em 2em 1em 1em;
+  width: 175px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+    line-height: 1;
+  background: #5bbee5;
+  background: linear-gradient(to right, #5bbee5, #52ddae);
+  text-indent: 0.1em;
+  letter-spacing: 0.1em;
+  border-radius: 1.5em;
+
+  
+}
+
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 1.5em;
+  margin: auto;
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  transform: rotate(45deg);
+  transition: right 0.5s;
+}
+
+button:hover:after{
+  right: 1em;
+}
+
+.e-mail input:focus {
+    outline: none;
+}
